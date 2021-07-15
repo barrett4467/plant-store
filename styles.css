@@ -18,3 +18,11 @@ input[type='submit'], button, [aria-label] {
     margin: auto;
     margin-top: 10px;
 }
+td{
+    background-color: aliceblue;
+    padding-right: 10px;
+    text-align: left;
+}
+.to-do{
+    background: transparent !important;
+}
