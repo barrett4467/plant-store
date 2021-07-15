@@ -16,15 +16,30 @@
         <p>List of plants for sale</p>
     </div>
     <div class="form">
-        <form action="javascript:void(0);" method="POST" onsubmit="app.App()">
+        <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
             <input type="text" id="plantName" placeholder="Plant Name">
             <!-- <input type="text" name="price" placeholder="Price"> -->
-            <input type="submit" value="Add" class="btn btn-primary"></input>
+            <input type="submit" id="add-plant" value="Add" class="btn btn-primary"></input>
         </form>
+        <p>You have:</p>
+        <p id="counter"></p>
+        <table>
+            <tr class="plant">
+                <th><h3>Plant</h3></th>
+                <tbody id="plants">
+
+                </tbody>
+            </tr>
+        </table>
 
     </div>
-    <div class="list-plants">
-        <ul id="plant"></ul>
+    <div id="edit-box" role="aria-hidden">
+        <form action="javascript:void(0)" method="POST" id="save-edit">
+            <input type="text" id="edit-plant">
+            <input type="submit" value="save" class="btn btn-success">
+            <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+        </form>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
