@@ -40,6 +40,32 @@
             <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
         </form>
     </div>
+    <!-- Database -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDmTTe3drzn0NS523PCIlEdF3IhKQu_tcM",
+    authDomain: "plant-store-893cd.firebaseapp.com",
+    projectId: "plant-store-893cd",
+    storageBucket: "plant-store-893cd.appspot.com",
+    messagingSenderId: "1022672035229",
+    appId: "1:1022672035229:web:dacaef3d762cbfe0b82374",
+    measurementId: "G-FPW7MLYL7R"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<!-- End of Database -->
+
     <script src="./script.js"></script>
 </body>
 </html>

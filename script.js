@@ -10,7 +10,7 @@ var app = new function() {
         if(this.plants.length>0){
             for(i=0; i< this.plants.length; i++){
                 data+="<tr>";
-                data+="<td>"+ (i+1) + ". "+ this.plants[0] + "</td>";
+                data+="<td>"+ (i+1) + ". "+ this.plants[i] + "</td>";
                 data+='<td><button onclick="app.Edit('+i+')"class="btn btn-warning">Edit</button></td>';
                 data+='<td><button onclick="app.Delete('+i+')"class="btn btn-danger">Delete</button></td>';
                 data+="</tr>"
